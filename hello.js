@@ -9,7 +9,7 @@ tabris.load(function() {
       text: "Native Widgets",
       layoutData: { centerX: 0, top: 100 }
     }).on("selection", function() {
-      label.set("text", "Totally Rock!");
+      label.set("text", "Totally Rocks!");
     }).appendTo(page);
 	
 	var text = tabris.create("Text", {
