@@ -11,10 +11,15 @@ tabris.load(function() {
     }).on("selection", function() {
       label.set("text", "Totally Rock!");
     }).appendTo(page);
+	
+	var text = tabris.create("Text", {
+      text: "Native Widgets",
+      layoutData: { centerX: 0, top: [button,50] }
+    }).appendTo(page);
 
     var label = tabris.create("Label", {
       font: "24px",
-      layoutData: {centerX: 0, top: [button, 50]}
+      layoutData: {centerX: 0, top: [text, 50]}
     }).appendTo(page);
 
     page.open();
